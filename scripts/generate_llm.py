@@ -12,7 +12,7 @@ dotenv.load_dotenv()
 split_lexicon = pl.read_csv('../../Resources/Lexica/SECO/aglut_lexico_v2.txt',
                             separator='\t')
 llm = MariTalk(key=os.environ['MARITALK_API_KEY'],
-               model='sabia-2-small')
+               model='sabia-2-medium')
 
 
 def run_llm(messages):
@@ -97,7 +97,7 @@ step3_template = ('Dessa lista de piadas, escolha somente uma que seja ' +
                   'do modelo, sem mais informações.')
 
 
-results = {'concept': list(), 'part1': list(), 'part2': list(),
+results = {'id':list(), 'concept': list(), 'part1': list(), 'part2': list(),
            'relation1': list(), 'relation2': list(),
            'prompt1': list(), 'relationed_words': list(),
            'prompt2': list(), 'candidates': list(),
@@ -138,6 +138,7 @@ for row in seco_scores.iter_rows():
     messages.append({'role': 'user', 'content': step3_template})
     final_answer = run_llm(messages)
 
+    results['id'].append(row[0])
     results['concept'].append(row[6])
     results['part1'].append(', '.join(row[7]))
     results['part2'].append(', '.join(row[8]))
