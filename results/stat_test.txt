@@ -1,0 +1,38 @@
+
+	Shapiro-Wilk normality test
+
+data:  agg_df$score
+W = 0.96898, p-value = 0.01848
+
+
+******************************
+
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  agg_df$score
+V = 1927.5, p-value = 0.4112
+alternative hypothesis: true location is not equal to 0
+95 percent confidence interval:
+ -0.2500293  0.1249522
+sample estimates:
+(pseudo)median 
+   -0.07134504 
+
+
+******************************
+
+ Krippendorff's alpha
+
+ Subjects = 100 
+   Raters = 10 
+    alpha = 0.341 
+
+******************************
+
+                       Df Sum Sq Mean Sq F value   Pr(>F)    
+as.factor(df$uuid)      9   51.3   5.705   6.646 3.76e-09 ***
+as.factor(df$joke_id)  99  483.9   4.888   5.695  < 2e-16 ***
+Residuals             696  597.4   0.858                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

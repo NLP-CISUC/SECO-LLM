@@ -9,6 +9,9 @@ numpy = "*"
 python-dotenv = "*"
 maritalk = "*"
 gradio = "*"
+seaborn = "*"
+pyarrow = "*"
+scipy = "*"
 
 [dev-packages]
 
