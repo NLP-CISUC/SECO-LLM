@@ -43,7 +43,7 @@ All results can be found in the `SECO-LLM/results` folder. The folder is organiz
 @inproceedings{InacioMarcioLimaGoncaloOliveira2024,
   title     = {Generation of {{Punning Riddles}} in {{Portuguese}} with {{Prompt Chaining}}},
   booktitle = {Proceedings of the 15th {{International Conference}} on {{Computational Creativity}} ({{ICCC}}'24)},
-  author    = {In{\'a}cio, Marcio Lima, Marcio and Gon{\c c}alo Oliveira, Hugo},
+  author    = {In{\'a}cio, Marcio Lima and Gon{\c c}alo Oliveira, Hugo},
   year      = {2024},
   month     = jun,
   publisher = {Association for Computational Creativity (ACC)},
@@ -52,4 +52,4 @@ All results can be found in the `SECO-LLM/results` folder. The folder is organiz
 }
 ```
 
-> Inácio, Marcio Lima, M., & Gonçalo Oliveira, H. (2024, June). **Generation of Punning Riddles in Portuguese with Prompt Chaining**. *Proceedings of the 15th International Conference on Computational Creativity (ICCC’24)*. 15th International Conference on Computational Creativity (ICCC’24), Jönköping. https://computationalcreativity.net/iccc24/full-papers/ICCC24_paper_143.pdf
+> Inácio, M. L., & Gonçalo Oliveira, H. (2024, June). **Generation of Punning Riddles in Portuguese with Prompt Chaining**. *Proceedings of the 15th International Conference on Computational Creativity (ICCC’24)*. 15th International Conference on Computational Creativity (ICCC’24), Jönköping. https://computationalcreativity.net/iccc24/full-papers/ICCC24_paper_143.pdf
